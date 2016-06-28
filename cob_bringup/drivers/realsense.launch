@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+	<arg name="name" default="cam3d"/>
+
+	<include file="$(find realsense_camera)/launch/realsense_r200_rgbd.launch">
+		<arg name="camera" value="$(arg name)"/>
+	</include>
+ 
+</launch>

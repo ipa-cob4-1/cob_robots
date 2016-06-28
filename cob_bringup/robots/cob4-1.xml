@@ -150,6 +150,10 @@
 			<arg name="robot" value="$(arg robot)" />
 			<arg name="component_name" value="light_torso" />
 		</include>
+
+		<include file="$(find cob_bringup)/drivers/realsense.launch" >
+			<arg name="name" value="torso_cam3d_down"/>
+		</include>
 	</group>
 
 	<group>
@@ -192,9 +196,6 @@
 			<arg name="nodelet_manager" value="torso_cam3d_left_nodelet_manager"/>
 		</include>
 
-		<!--include file="$(find cob_bringup)/drivers/softkinetic.launch" >
-			<arg name="name" value="torso_cam3d_down"/>
-		</include-->
 	</group>
 
 	<group>
